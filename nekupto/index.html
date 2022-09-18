@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Nekupujte teď předražené nemovitosti. Proč? - efx.cz</title>
+    <meta
+      name="description"
+      content="Nekupujte předražené nemovitosti. Možná je lepší nekoupit nemovitost vůbec.
+    Za 5 minut čtení, zjistíte důležitá fakta, co vám možná změní život"
+    />
+    <meta name="author" content="SitePoint" />
+
+    <meta property="og:title" content="Nekupujte teď předražené nemovitosti. Proč?" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://www.sitepoint.com/a-basic-html5-template/" />
+    <meta
+      property="og:description"
+      content="Nekupujte předražené nemovitosti. Možná je lepší nekoupit nemovitost vůbec.
+    Za 5 minut čtení, zjistíte důležitá fakta, co vám možná změní život"
+    />
+    <meta property="og:image" content="prachy-baraky.jpg" />
+
+    <link rel="icon" target="_blank" href="/favicon.ico" />
+
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Teko:wght@500&display=swap");
+
+      h1,
+      h2,
+      h3 {
+        position: relative;
+        margin: 3rem 0 1rem 0;
+        margin-left: -3vw;
+        font-family: Teko, sans-serif;
+        letter-spacing: 0.02em;
+        color: #201389;
+        font-weight: 500;
+      }
+      h1,
+      h2.h1 {
+        margin-left: -5vw;
+        margin-right: -2vw;
+        text-align: center;
+        font-size: 58px;
+        border-bottom: 3px dashed red;
+        padding-top: 1em;
+        color: rgb(50, 42, 78);
+      }
+      h2.h1 {
+        text-align: left;
+      }
+      h2 {
+        font-size: 38px;
+      }
+      P {
+        margin-inline: auto;
+        background-color: white;
+        line-height: 2em;
+        padding: 1rem 2vw;
+        box-shadow: 0 0 50px white, 0 0 88px white;
+        margin: 0;
+      }
+      p.subtitle {
+        text-align: center;
+        font-size: 22px;
+        line-height: 2em;
+        position: relative;
+        position: relative;
+        margin-left: -3vw;
+        box-shadow: none;
+      }
+      p.kecy {
+        text-align: center;
+        border: 3px dotted #201389;
+        margin: 3rem 2vw 1.3rem 2vw;
+        padding: 2rem;
+        background: #f0edf7;
+      }
+      body {
+        padding-top: 222px;
+        background: url(prachy-baraky.jpg) no-repeat;
+        background-position: center 55px;
+        background-color: rgb(248, 248, 248);
+        font-size: 18px;
+        font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana,
+          sans-serif;
+        overflow-x: hidden;
+      }
+      main {
+        max-width: 960px;
+        margin: auto;
+        padding: 2vw;
+        padding-left: 5vw;
+        box-sizing: border-box;
+      }
+
+      .imgFrame {
+        width: 100vw;
+        margin-left: calc(-1 * (((100vw - 960px) / 2 + 5vw)));
+        display: flex;
+        justify-content: center;
+        margin-bottom: 1.5rem;
+        background-size: contain;
+        background-color: red;
+      }
+
+      @media screen and (max-width: 960px) {
+        .imgFrame {
+          margin-left: -7vw;
+        }
+        h1,
+        h2,
+        h3 {
+          line-height: 1.1em;
+        }
+      }
+
+      img {
+        width: 100vw;
+      }
+
+      /**      @media (prefers-color-scheme: dark) {
+        html {
+          filter: invert(0.93) hue-rotate(166deg);
+        }
+      } **/
+
+      #prices {
+        height: 31.4vw;
+        background-image: url(ceny-nemovitosti.png);
+      }
+      #priceCaption {
+        margin-top: 4vw;
+        background: none;
+        height: auto;
+        padding-inline: 18vw;
+        text-align: center;
+      }
+      #sucho {
+        height: 29.6vw;
+        background-image: url(kazachstan.jpg);
+      }
+      #sweden {
+        height: 42.1vw;
+        background-image: url(svedsko-migranti.jpg);
+      }
+
+      @media screen and (max-width: 606px) {
+        #prices {
+          height: 69vw;
+          background-image: url(ceny-nemovitosti-m.png);
+          margin-top: 4rem;
+        }
+        #priceCaption {
+          margin-top: -3rem;
+          background: none;
+          height: auto;
+          padding-inline: 11vw;
+        }
+        #sucho {
+          height: 100vw;
+          background-image: url(kazachstan-m.jpg);
+        }
+        #sweden {
+          height: 100vw;
+          background-image: url(svedsko-migranti-m.jpg);
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-7XC347TPNE"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-7XC347TPNE");
+    </script>
+
+    <main>
+      <h1>Nekupujte teď předražené nemovitosti. Proč?</h1>
+      <p class="subtitle">
+        A možná je lepší nekoupit nemovitost vůbec (<a href="#rizika">viz dále</a>)<br />
+        Za 5 minut čtení, zjistíte důležitá fakta, co vám možná změní život
+      </p>
+
+      <p class="kecy">
+        Ale všichni realitní makléři přece říkají, že ceny níž nepůjdou , maximálně budou stagnovat, ne?
+      </p>
+
+      <p>
+        To je jen snaha o sebenaplňující se předpověď. Když všechny pomocí médií přesvědčíte, že ceny nemovitostí níž
+        nepůjdou, tak se to nejspíš stane. Stačí aby tomu lidi věřili.
+      </p>
+
+      <p>
+        Je potřeba, aby si lidi uvědomili, že oni sami rozhodují o cenách nemovitostí. Když nebude ochota nakupovat
+        předražené nemovitosti, prodejci budou muset jít s cenou níž nebo prostě neprodají. Jde jen o to, kdo to dýl
+        vydrží. Majitele nemovitostí teď budou k prodeji tlačit vysoké hypo úroky a ceny energií.
+      </p>
+
+      <h2>Nemovitosti ale neustále rostou na ceně.</h2>
+      <p>
+        To je oblíbená hláška a důvod proč jsou lidi ochotni se zadlužit na krev do konce života. V minulosti však ceny
+        nemovitostí mnohokrát spadly. Teď jsou ceny nemovitostí jako nafouknutá bublina, která hrozí prasknutím. Podle
+        ČNB jsou nemovitosti
+        <a
+          target="_blank"
+          href="https://www.seznamzpravy.cz/clanek/ekonomika-finance-ceske-banky-ustoji-i-dlouho-krizi-tvrdi-cnb-206314."
+          >nadhodnocené o 40%</a
+        >.
+      </p>
+
+      <p>
+        V ČR máme ceny nemovitostí podobné
+        <a target="_blank" href="https://www.globalpropertyguide.com/Europe/square-meter-prices"
+          >jako v Německu a jiných západních zemích</a
+        >, ale přitom máme třetinové platy. Prostě jsme se nechali zmanipulovat k nákupu nemovitostí za každou cenu.
+      </p>
+
+      <div class="imgFrame" id="prices">
+        <em id="priceCaption"> Průměrná cena za metr čtvereční v centru velkých měst v různých evropských zemích:</em>
+      </div>
+
+      <h2>Proč je nebezpečné nakupovat za současné ceny?</h2>
+
+      <p>
+        Jak známo trh se pohybuje v cyklech a zrovna teď jsme nejspíš kousek za vrcholem a čeká nás nějaký rok jízda
+        dolů ekonomickým ochlazením. Ukvapený nákup za současné vysoké ceny je riziko z mnoha důvodů.
+      </p>
+
+      <p>
+        Vysoké ceny nemovitostí vás nutí zadlužit se daleko víc. Když si vezmete hypotéku tzv. na krev (po zaplacení
+        hypošky vám zbude sotva na jídlo a energie), tak to znamená, že nesmí nastat sebemenší problém (zvýšení hypo
+        úroku, zvýšení cen energií, snížení vašeho příjmu). Pokud se tak stane, nejste schopni splácet a dům budete
+        muset prodat. Při hypotéce na 30 let je to naprostá šílenost, dřív nebo později nějaké problémy zákonitě
+        přijdou.
+      </p>
+
+      <p>
+        Když máte tu smůlu a po koupi nemovitosti začnou ceny klesat, tak potom bance dlužíte vyšší částku než je
+        aktuální cena nemovitosti. Např. jste si od banky půjčily 5 milionů, ale po poklesu cen má nemovitost hodnotu
+        jen 4 miliony. Pokud tou nemovitostí ručíte, tak pro banku to znamená, že ručíte nižší hodnotou než máte
+        půjčenou. Je pravděpodobné, že banka bude chtít hypotéku dozajistit nějakou další nemovitostí.
+      </p>
+
+      <a name="rizika"></a>
+      <h2 class="h1">
+        Má vůbec smysl kupovat nemovitost? <br />
+        Velká rizika na obzoru
+      </h2>
+      <p>
+        Nemovitost je vnímána jako svatý grál, jistota vlastního bydlení, zabezpečení na stáří, atd. Toto nepochybně
+        stále platí, ale časy se bohužel mění a na obzoru je spousta černých labutí. Budoucnost je čím dál víc nejistá.
+        K čemu je teď vlastní nemovitost obyvatelům Ukrajiny nebo třeba Venezuely?
+      </p>
+
+      <h2>Změna klimatu, sucho a požáry</h2>
+      <p>
+        Po současném létě (<a
+          target="_blank"
+          href="https://www.seznamzpravy.cz/clanek/zahranicni-takove-vedro-britanie-nepamatuje-novy-rekord-nejspis-nevydrzi-ani-den-209283"
+          >v Londýně bylo rekordních 40°C</a
+        >
+        ) a požárech po celé Evropě je snad každému jasné, že klima není v pořádku a rok od roku se to horší. Pokud to
+        chcete v číslech, tak tu můžete vidět
+        <a target="_blank" href="https://effis.jrc.ec.europa.eu/apps/effis.statistics/estimates/FRA">
+          vývoj počtu požárů (a spálené plochy) ve Francii</a
+        >
+        mezi roky 2008 a 2022. Slunná Kalifornie byla celá desetiletí jedním z nej&shy;oblíbe&shy;nějších míst pro život
+        v USA, teď se odtamtud lidé kvůli
+        <a
+          target="_blank"
+          href="https://www.idnes.cz/zpravy/zahranicni/kalifornie-sucho-pozary-sucho-ceny-nemovitosti-klimaticka-krize-usa-exodus.A201207_142742_zahranicni_aha"
+          >suchu a požárům stěhují pryč</a
+        >. Toto nejspíš bohužel čeká i Českou republiku, podle klimatologa má být
+        <a
+          target="_blank"
+          href="https://zpravy.aktualne.cz/domaci/do-30-let-bude-v-cesku-horko-jako-v-kazachstanu/r~48f8b060126611ed8d680cc47ab5f122/"
+        >
+          do 30 let klima v ČR podobné Kazachstánu.</a
+        >
+      </p>
+      <br />
+
+      <div class="imgFrame" id="sucho"></div>
+      <i>
+        Toto je satelitní fotka města ve středním Kazachstánu. Stromy nerostou ani kolem vodních ploch. Marně budete
+        kolem měst a vesnic hledat nějaká pole, sady či louky, bez vody prostě neroste skoro nic.
+      </i>
+      <br /><br />
+
+      <p>
+        Narozdíl např. od Itálie na tom bude Česko hůř, protože nemáme moře, které funguje jako přirozená klimatizace a
+        přináší vláhu. Hlavně mladí se pravděpodobně budou chtít odstěhovat za lepšími podmínkami pro život. A s nimi
+        zmizí i dostupnost služeb, lékařské péče, atd.
+      </p>
+
+      <h2>Migrace z afriky</h2>
+      <p>
+        V Africe už se toto reálně děje. Lidé mezi sebou
+        <a
+          target="_blank"
+          href="https://www.seznamzpravy.cz/clanek/zahranicni-kensky-horor-ve-fotkach-lide-a-zvirata-bojuji-o-vodu-183459"
+          >bojují o vodu a půdu</a
+        >. Vody a jídla je tam málo, lidi se přemnožili. Tato situace nutí Afričany k migraci, jsou ochotni podstoupit
+        skoro cokoliv, aby se dostali do Evropy. V ČR jsme zatím v klidu, ale z mnoha čtvrtí v evropských metropolích se
+        stala malá afrika a původní obyvatelstvo se raději odstěhovalo pryč. Se zhoršujícími se podmínkami v Africe bude
+        migrantů přibývat i v ČR. Stejně jako v jiných evropských metropolích se nově příchozí začnou shlukovat v
+        určitých oblastech. Kdo tam vlastní byt, tak bude rád, že ho prodá za zlomek původní ceny a odstěhuje se.
+      </p>
+      <div class="imgFrame" id="sweden"></div>
+      <em>
+        Záběr ze čvtrti Bergsjön v Göteborgu (Švédsko), kde z původních obyvatel zůstal jen málokdo. Kriminalita za
+        posledních 20 let vzrostla ve Švédsku několikanásobně.
+        <a
+          target="_blank"
+          href="https://www.novinky.cz/clanek/zahranicni-evropa-povest-svedska-jako-oazy-klidu-mizi-v-zemi-se-strili-a-bouchaji-bomby-40305327"
+        >
+          Podle listu Dagens Nyheter patří devět z deseti pachatelů těchto zločinů k migrantům první či druhé
+          generace.</a
+        >
+      </em>
+
+      <h2>Ekonomika na hliněných nohou</h2>
+      <p>
+        ČR je exportní ekonomika, dominantní je automobilový průmysl. Ten tvoří velkou část našeho vývozu, jsme na něm
+        dost závislý.
+        <a
+          target="_blank"
+          href="https://www.peak.cz/cesko-i-slovensko-jsou-v-problemech-kvuli-zavislosti-na-vyrobe-aut/31572/"
+          >To je značně nebezpečná situace</a
+        >. Ekonomové před tím varují už roky, politici to ale nijak neřeší. Automobilový průmysl přitom čekají velké
+        změny. Přechod na elektromobilitu, vzrůstající konkurence čínských automobilek, omezování a sdílení aut. V ČR
+        navíc ještě hrozí přesun výroby do levnějších zemí (Balkán). Na automobilový průmysl je navázaný rozsáhlý
+        dodavatelský řetězec dalších výrobců a na ty zase jiní výrobci. Hrozí tedy dominový efekt.
+      </p>
+
+      <p>
+        Pokud by Škodovka a další výrobci tyto změny v budoucnu neustály, tak to bude znamenat propouštění ve stovkách
+        velkých průmyslových firem. Když takto v roce 2008 zbankrotovala General Motors v Detroitu, tak město opustilo
+        velké množství lidí a do města se nový obyvatelé lákali na
+        <a
+          target="_blank"
+          href="https://www.blesk.cz/clanek/cestovani/456843/ze-vzkvetajici-metropole-je-mesto-duchu-detroit-zahubila-krize-rasove-nepokoje-a-neschopni-politici.html"
+          >nemovitosti za symbolický jeden dolar.</a
+        >
+      </p>
+
+      <h2>Závěrem</h2>
+      <p>
+        Cílem tohoto článku není vyvolat paniku, ale upozornit na velká rizika na obzoru. Není to příjemné čtení, ale je
+        důležité o tom vědět. Ideální by bylo, aby si lidé uvědomili, co nám hrozí a chtěli, aby to politici řešili.
+        Protože v současné době to vypadá, že náš největší problém je, kolik se přidá na důchody a jestli nebudeme muset
+        mít v zimě o svetr navíc.
+      </p>
+      <br /><br /><br />
+    </main>
+  </body>
+</html>
