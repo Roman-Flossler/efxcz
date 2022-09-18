@@ -20,11 +20,18 @@
       }
       html {
         background-color: red;
+        overflow: hidden;
       }
       body {
+        overflow: hidden;
         animation-name: invert;
         animation-duration: 8s;
         animation-iteration-count: infinite;
+      }
+      @media (orientation: portrait) {
+        body {
+          transform: scaleX(1.2) scaleY(1.8);
+        }
       }
       div {
         display: none;
@@ -42,7 +49,7 @@
           filter: hue-rotate(-130deg) blur(0px);
         }
         30% {
-          filter: hue-rotate(-170deg) blur(20px);
+          filter: hue-rotate(-170deg) blur(1vw);
         }
         35% {
           filter: hue-rotate(183deg) blur(0px);
@@ -51,7 +58,7 @@
           filter: hue-rotate(360deg) blur(0);
         }
         66% {
-          filter: hue-rotate(-170deg) blur(20px);
+          filter: hue-rotate(-170deg) blur(1vw);
         }
         73% {
           filter: hue-rotate(-170deg) blur(0);
@@ -62,6 +69,19 @@
         }
       }
     </style>
+    <script>
+      function reload() {
+        location.reload();
+      }
+
+      if (window.screen.orientation) {
+        // new standard - works on Android
+        window.screen.orientation.addEventListener("change", reload);
+      } else {
+        // obsolete works on iOS
+        window.addEventListener("orientationchange", reload);
+      }
+    </script>
   </head>
   <body>
     <!--
