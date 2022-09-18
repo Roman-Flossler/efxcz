@@ -107,17 +107,6 @@
         background-color: red;
       }
 
-      @media screen and (max-width: 960px) {
-        .imgFrame {
-          margin-left: -7vw;
-        }
-        h1,
-        h2,
-        h3 {
-          line-height: 1.1em;
-        }
-      }
-
       img {
         width: 100vw;
       }
@@ -148,7 +137,24 @@
         background-image: url(svedsko-migranti.jpg);
       }
 
+      @media screen and (max-width: 960px) {
+        .imgFrame {
+          margin-left: -7vw;
+        }
+        h1,
+        h2,
+        h3 {
+          line-height: 1.1em;
+        }
+      }
+
       @media screen and (max-width: 606px) {
+        body {
+          background-size: 301%;
+          background-position: center 42px;
+          padding-top: 30vw;
+        }
+
         #prices {
           height: 69vw;
           background-image: url(ceny-nemovitosti-m.png);
