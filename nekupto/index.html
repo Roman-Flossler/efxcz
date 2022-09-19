@@ -382,12 +382,17 @@
       <br /><br /><br />
     </main>
     <script type="text/javascript">
-      window.reached = false;
+      window.reached100 = false;
+      window.reached50 = false;
       document.addEventListener("scroll", function () {
         //console.log(window.scrollY + " " + document.body.scrollHeight);
-        if (window.scrollY + window.innerHeight + 500 > document.body.scrollHeight && !window.reached) {
-          window.reached = true;
+        if (window.scrollY + window.innerHeight + 500 > document.body.scrollHeight && !window.reached100) {
+          window.reached100 = true;
           ga("send", "pageview", "/nekupto/done");
+        }
+        if (window.scrollY > document.body.scrollHeight / 2 && !window.reached50) {
+          window.reached50 = true;
+          ga("send", "pageview", "/nekupto/doomday");
         }
       });
     </script>
