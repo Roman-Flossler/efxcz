@@ -134,6 +134,37 @@
         width: 100vw;
       }
 
+      #diskuze {
+        position: fixed;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        right: 2vw;
+        bottom: 2vw;
+        width: 6rem;
+        height: 6rem;
+        border-radius: 50%;
+        text-align: center;
+        box-shadow: 0 0 24px white, 0 0 34px white;
+        background-color: #dfdbc2;
+      }
+
+      #diskuze:hover {
+        transition: 0.6s;
+        transform: rotateY(360deg);
+        filter: invert(1) hue-rotate(110deg);
+        box-shadow: none;
+      }
+
+      #diskuze a {
+        color: #064a12;
+        text-decoration: wavy;
+        text-decoration: underline;
+        text-decoration-style: wavy;
+        text-underline-offset: 3px;
+        text-decoration-color: #99ad81;
+      }
+
       /**      @media (prefers-color-scheme: dark) {
         html {
           filter: invert(0.93) hue-rotate(166deg);
@@ -168,6 +199,9 @@
         h2,
         h3 {
           line-height: 1.1em;
+        }
+        #diskuze {
+          transform: scale(0.88);
         }
       }
 
@@ -381,6 +415,12 @@
       </p>
       <br /><br /><br />
     </main>
+    <div id="diskuze">
+      <a href="https://www.efx.cz/nekupto/diskuze/" target="_blank"
+        >Diskuze <br />
+        k tématu</a
+      >
+    </div>
     <script type="text/javascript">
       window.reached100 = false;
       window.reached50 = false;
