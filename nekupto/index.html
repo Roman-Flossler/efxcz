@@ -23,6 +23,7 @@
     <!-- End Google Analytics -->
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#dde4e7" />
 
     <title>Nemovitosti nejsou co bývaly, je to teď riziko. A proč? - efx.cz</title>
     <meta
@@ -46,6 +47,32 @@
 
     <style>
       @import url("https://fonts.googleapis.com/css2?family=Teko:wght@500&display=swap");
+
+      #topbar {
+        position: fixed;
+        top: 0;
+        right: 0;
+        background-color: #dde4e7;
+        height: 24px;
+        text-align: center;
+        width: 100%;
+        z-index: 3;
+        border-bottom: 11px dashed #f9f9f9;
+      }
+
+      #logo {
+        width: 166px;
+        display: inline-block;
+        height: 48px;
+        background-color: #dde4e7;
+        background: linear-gradient(to top, white -33%, #dde4e7 49%);
+      }
+
+      #logo img {
+        width: 80%;
+        margin-top: 11px;
+        filter: drop-shadow(0 0 8px white);
+      }
 
       h1,
       h2,
@@ -103,9 +130,9 @@
         background: #f0edf7;
       }
       body {
-        padding-top: 222px;
+        padding-top: 255px;
         background: url(prachy-baraky.jpg) no-repeat;
-        background-position: center 55px;
+        background-position: center 88px;
         background-color: rgb(248, 248, 248);
         font-size: 18px;
         font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana,
@@ -208,8 +235,8 @@
       @media screen and (max-width: 606px) {
         body {
           background-size: 301%;
-          background-position: center 42px;
-          padding-top: 30vw;
+          background-position: center 66px;
+          padding-top: 33vw;
         }
 
         #prices {
@@ -236,6 +263,11 @@
   </head>
 
   <body>
+    <div id="topbar">
+      <span id="logo">
+        <img src="exfcz.png" />
+      </span>
+    </div>
     <main>
       <h1>Nákup nemovitosti je teď riziko. Proč?</h1>
       <p class="subtitle">
