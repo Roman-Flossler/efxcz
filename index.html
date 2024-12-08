@@ -25,11 +25,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
     <title>efx.cz</title>
-    <meta
-      name="description"
-      content="Nákup bydlení je teď rizko, možná je lepší nekoupit nemovitost vůbec.
-    Za 5 minut čtení, zjistíte důležitá fakta, co vám možná změní život"
-    />
+    <meta name="description" content="EFX.cz" />
     <style>
       body,
       html {
@@ -38,17 +34,18 @@
         font-size: 0;
       }
       html {
-        background-color: red;
+        background-color: #420230;
         overflow: hidden;
       }
       body {
         overflow: hidden;
-        animation-name: invert;
-        animation-duration: 8s;
-        animation-iteration-count: infinite;
+        color: white;
+      }
+      a {
+        color: #ffeb3b;
       }
       @media (orientation: portrait) {
-        body {
+        canvas {
           transform: scaleX(1.2) scaleY(1.8);
         }
       }
@@ -56,8 +53,13 @@
         display: none;
       }
       canvas {
+        position: relative;
+        top: 8vh;
         width: 100vw;
         height: 100vh;
+        animation-name: invert;
+        animation-duration: 8s;
+        animation-iteration-count: infinite;
       }
       @keyframes invert {
         0% {
@@ -87,6 +89,23 @@
           filter: hue-rotate(0deg) blur(0);
         }
       }
+
+      main {
+        position: absolute;
+        top: 30px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 93%;
+        max-width: 666px;
+        text-align: center;
+        line-height: 1.5;
+        z-index: 1;
+        padding: 0 4vw;
+        font-size: 16px;
+        font-family: Arial, Helvetica, sans-serif;
+        box-sizing: border-box;
+        background-color: #0319258c;
+      }
     </style>
     <script>
       function reload() {
@@ -103,12 +122,34 @@
     </script>
   </head>
   <body>
-    <!--
+    <main>
+      <p>
+        Zkuste vyslovit <strong>Efx.cz</strong>. Má to švih, zní to efektně, snadno si to člověk zapamatuje. Zkrátka
+        unikátní doména, ideální na vybudování silného brandu.
+      </p>
 
-very bad single thread performance.... 
-sorry AMD users - will fix that soon!!! :D
-
--->
+      <p>
+        Už 12 let si říkám, že na ní zkusím rozjet nějaký projekt, ale zatím nebyl čas. Pokud byste doménu hodně chtěli,
+        zkuste mi nabídnout nějakou zajímavou částku na
+        <script type="text/javascript">
+          pron4 = "olf.www";
+          pron3 = "r.cz@";
+          pron1 = "gmai";
+          pron2 = "l.com";
+          document.write(
+            '<a href="mailto:' +
+              pron4.split("").reverse().join("") +
+              pron3 +
+              pron1 +
+              pron2 +
+              '" >' +
+              "tento&nbsp;email" +
+              "</a>"
+          );
+        </script>
+        .
+      </p>
+    </main>
     <div>
       <ul data-time="3000">
         <li data-hue="197">E</li>
